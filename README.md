@@ -16,66 +16,70 @@ SSH server basic setup.
 ( A not So crazy way to take the hand on your wifi domain and any GPIOs via
                      simple C or python programs. )
  In that way your program can internally talk to your remote servers without 
- typing password at each time.
- that the clever add of any hosted linux single board with embedded wifi. 
- From touch screen you can remotely control any switchs, alarm, light ect
- with time referance, auto boot up and internet update of the wlan status.
+ having to type password at each time.
+ that the added value of any hosted linux single board with embedded wifi.
+ (at my sens...)
+ possibly from touch screen fith simple tinker python interface you can 
+ remotely control any switchs, alarm, light ect with universal time referance, 
+ auto boot up and internet update of the wlan status device...
  this technic is an easy way of doing this without heavy new software skills 
  while keeping the full transparency for the end user. so why closing eyes 
  on this amazing possibility. 
-
-                   The penguins take care of your home :)
-                                .-"""-.
-                               '       \
-                              |,.  ,-.  |
-                              |()L( ()| |
-                              |,'  `".| |
-                              |.___.',| `
-                             .j `--"' `  `.
-                            / '        '   \
-                           / /          `   `.
-                          / /            `    .
-                         / /              l   |
-                        . ,               |   |
-                        ,"`.             .|   |
-                     _.'   ``.          | `..-'l
-                    |       `.`,        |      `.
-                    |         `.    __.j         )
-                    |__        |--""___|      ,-'
-                       `"--...,+""""   `._,.-' mh
-		 
-     A raspberry pi or beagelboard are recommanded for regular security updates.
-but mainly linux is the dreamed platform for learning and tweaking everything...
-without this pure opensource philosophy, we are stuck in corporation, politic & dictat ... 
-                    So, get your yellow palm ready !
+```
+                             The penguins take care of your home :)
+                                            .-"""-.
+                                           '       \
+                                          |,.  ,-.  |
+                                          |()L( ()| |
+                                          |,'  `".| |
+                                          |.___.',| `
+                                         .j `--"' `  `.
+                                        / '        '   \
+                                       / /          `   `.
+                                      / /            `    .
+                                     / /              l   |
+                                    . ,               |   |
+                                    ,"`.             .|   |
+                                  .'   ``.          | `..-'l
+                                |       `.`,        |      `.
+                                |         `.    __.j         )
+                                |__        |--""___|      ,-'
+                                   `"--...,+""""   `._,.-' mh
+```
+( A Raspberry pi or beagelboard are recommanded for regular security updates aviability ... )
+... linux is the dreamed platform for learning and tweaking everything without almost no secret for developer ...
+without this pure opensource philosophy, we are stuck in corporation, politic & dictat we pull this at our own avantage 
+as community user !
+                       So, get your yellow palm ready here a true soft start !
+		       
 ***********************************************************************************
 
--> first step make a public and private key for encrypted link.
+-> first step is to make a public and private key (for encrypted link.)
 ```
 $ sudo ssh-keygen -t rsa
 ```
-" just enter no passphrase
-" then locate the path of the genrated key ( ~/.ssh in general )
+" just enter blank text for "passphrase"
+" then locate the path of the genrated key file: ( ~/.ssh in general )
 
 ->step2 copy the key on the server:
 
-**(on the server side !!!!!!!!!):
+on the server side type:
 ```
 $ sudo systemctl enable ssh 
 $ sudo systemctl start ssh 
 $ ip addr 
 ```
-and note the ssh server ip for wlan0
+and note the ssh server ip for wlan0... that your ipserver
 
-**(on your client side!!!!!!!!!)
+on your client side:
 ```
 $ sudo ssh-copy-id -i ~/.ssh/id_rsa username@ipserver
 ```
-then now you can simply login remotely on server with 
+then now you can simply login remotely on server with:
 ```
 $ ssh username@ipserver 
 ```
-no password are needed anymore...
+no password are needed anymore for login via ssh from client
 
 if everything work well 
 on **(server side !) you can now go in:
@@ -87,10 +91,10 @@ and add the two following text line instructions:
 PubkeyAuthentication yes
 PasswordAuthentication no
 ```
-( this will disable password login on the server via ssh login the 
-encrypted key will be used instead )
+this will disable password login on the server via ssh login from client...
+(the encrypted key will be used instead )
 
-!!! only encrypted link will work from now... !!!
+!!! So only encrypted link will work from now... !!!
 (*** established by the ssh-copy-id command... ***)
 
 "switch to PasswordAuthentication yes for reenabling remote connection via 
@@ -109,8 +113,8 @@ $ sudo systemctl restart ssh
 ```
 ( for refreshing the new list of host allowed on the server ).
 
-Now you can code a simple program for controling gpio or anything remotly with 
-simple command line as simple as that !!! (  more on this in a moment... )
+Now you can code a simple program on the client side for controling gpio or anything remotly !
+more on this in a moment... 
 
 for controling the server (on server side):
 	```
@@ -130,34 +134,39 @@ for controling the server (on server side):
         ```
 	( for cheking actual status )
 
-additional security program:
+for additional security mesures:
         * use a compiled and minimalist linux kernel.
-	* "failtoban" and "ufw" is also recomanded.
+	* "failtoban" and "ufw"/iptables setup is also recomanded.
 	
-special trick for remote control from program:
+remotely control the server:
+the server restrict distant sudo command a passord are claim from the server
+for that we have to set the server to ask for superuser passwor only one time at the
+begening of the journey/session...
 
-for on server password restriction type (on the server side!):
+on server side type:
 ```
 $ sudo visudo 
 ```
 under the line starting %root or %admin type
 your_user_name_session ALL=NOPASSWD: ALL
 
-like this:
+like this: (julien is my username)
 ```
 %sudo   ALL=(ALL:ALL) ALL
 julien ALL=NOPASSWD: ALL
 ```
-f2 for saving with nano ( be care full to don't make error before saving you can mess your login file
-a warning is triggered in case of error before save as protectio read well the escape without saving instructions )
-then loggout & login your session for update the server status.
+F2 key for saving with nano ( be care full to don't make error before saving you can mess 
+your login file, futher more a warning is triggered in case of error before save as protection ! 
+read well the escape key for qiting without saving the instructions !
+
+*then loggout & login your session for update the server status.
 
 * now you have type your password only one time by session !!!
 
-now for security purpose you have to log on server via $ ssh username@serverip 
-once then type sudo apt update (or anything else in sudo one time !) 
+*Now for security purpose you have to log on server via $ ssh username@serverip 
+once then type sudo apt update (or anything else in sudo only one time !) 
 this allow the next comming sudo instructions to run properly 
-but once done one time it's ok for all the day !!! ( it's like a bluetooth pairing )
+but once it's done it's ok for all the day !!! ( it's like a bluetooth pairing )
 
 Now with a simple C line code like this:
 ```
@@ -166,15 +175,16 @@ system("ssh -t username@sshipserver touch ~/My_yellow_palm"); // Warning ! Your 
 you can do anything you want easly on your private home network with safety and encryption. 
 
 ***********************************************************************************
-Is that things is for naive children ? certenly not ! but 
-it's bound to comunication domain with the whole security issue comming with ! 
-i say that because often we see 8 years old childrens with raspberrypi picture promotion. 
-that fun and positive ! but a computer is open on internet and bad people my 
+Is that things is for naive children ? certainly not ! but 
+it's bound to the comunication domain with the whole security issue comming with ! 
+I say that because often we see 8 years old childrens with raspberrypi on picture promotion. 
+that fun and positive ! but a computer is open on internet and bad people may 
 be every where even inside your smart wc !!! we have to be aware of that a soon as 
 possible !   -> next notice server socket through outside internet connection Yeah !
 ***********************************************************************************
 
 the following is a unix more advance way to run command in pure C:
+
 ```
 #include <stdlib.h>
 #include <stdio.h>
