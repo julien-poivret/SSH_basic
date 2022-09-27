@@ -23,17 +23,17 @@ SSH server basic setup, (for "password less" login) and strategic domotic home c
  so why closing eyes on this amazing possibility ? 
  !! C++ qt interface is the pro way to fix the graphic aspect !
 ```
-                             The penguins take care of your home :)
-                                            .-"""-.
-                                           '       \
-                                          |,.  ,-.  |
-                                          |()L( ()| |
-                                          |,'  `".| |
-                                          |.___.',| `
-                                         .j `--"' `  `.
-                                        / '        '   \
-                                       / /          `   `.
-                                      / /            `    .
+                                  The penguins and the raspberry take care of your home :)
+                                            .-"""-.                          .~~.   .~~.
+                                           '       \                        '. \ ' ' / .'
+                                          |,.  ,-.  |                        .~ .~~~..~.
+                                          |()L( ()| |                       : .~.'~'.~. :
+                                          |,'  `".| |                      ~ (   ) (   ) ~
+                                          |.___.',| `           &         ( : '~'.~.'~' : )
+                                         .j `--"' `  `.                    ~ .~ (   ) ~. ~
+                                        / '        '   \                    (  : '~' :  ) Raspberry Pi
+                                       / /          `   `.                   '~ .~~~. ~'
+                                      / /            `    .                      '~'
                                      / /              l   |
                                     . ,               |   |
                                     ,"`.             .|   |
@@ -41,7 +41,8 @@ SSH server basic setup, (for "password less" login) and strategic domotic home c
                                 |       `.`,        |      `.
                                 |         `.    __.j         )
                                 |__        |--""___|      ,-'
-                                   `"--...,+""""   `._,.-' mh
+                                   `"--...,+""""   `._,.-' mh Linux
+	         		         
 ```
 ( A Raspberry pi or beagelboard are recommanded for regular security updates and aviability ... )
 ... linux is the dreamed platform for learning and tweaking everything without almost no secret for the developer ...
