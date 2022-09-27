@@ -174,7 +174,7 @@ read well the escape key for qiting without saving the instructions !
 
 * Now for security purpose you have to log on server via $ ssh username@serverip 
 once then type sudo apt update (or anything else in sudo only one time !) 
-this allow the next comming sudo instructions to run properly 
+this allow the next comming sudo instructions to run properly without code,
 but once it's done it's ok for all the day !!! ( it's like a bluetooth pairing )
 
 * Now with a simple C line code like this:
