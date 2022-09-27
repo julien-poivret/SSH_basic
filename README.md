@@ -162,7 +162,7 @@ $ sudo systemctl status ssh
   for that we have to set the server to ask for superuser password only ONE time at the
   bigenning of the journey/session..."
 
-* On server side type:
+* On the server side type:
 ```
 $ sudo visudo 
 ```
