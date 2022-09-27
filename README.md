@@ -150,7 +150,7 @@ $ sudo systemctl status ssh
   "the server restrict distant sudo command...
   and so, a password are claim from the server at each "super user domain" (sudo) commad
   for that we have to set the server to ask for superuser password only ONE time at the
-  begening of the journey/session..."
+  bigenning of the journey/session..."
 
 * on server side type:
 ```
