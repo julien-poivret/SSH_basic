@@ -176,7 +176,8 @@ but once it's done it's ok for all the day !!! ( it's like a bluetooth pairing )
 
 * Now with a simple C line code like this:
 ```
-system("ssh -t username@sshipserver touch ~/My_yellow_palm"); // Warning ! Your mind must be pure ! now you remotely control a computer !
+system("ssh -t username@sshipserver touch ~/My_yellow_palm"); 
+// Warning ! Your mind must be pure ! now you remotely control a computer !
 ```
 you can do anything you want easly on your private home network with safety and encryption. 
 
