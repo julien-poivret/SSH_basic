@@ -15,9 +15,9 @@ SSH server basic setup, for "password less" login (with security) and strategic 
  having to type password at each time.
  (that the added value of any hosted linux single board with embedded wifi.)
                                  (at my sens...)
- * Allow for intance to possibly (from touch screen) with simple tinker python 
- interface remotely control any switchs, alarm, light ect with universal time referance, 
- auto boot up and internet update of the wlan status device...
+ * Allow for intance to possibly (from touch screen) with simple "tinker python 
+ interface" remotely control any switchs, alarm, light ect with universal time referance, 
+ internet update of the devices on the wlan ...
  * This technic is an easy way of doing this without heavy new software skills 
  while keeping the full transparency for the end user. 
  so why closing eyes on this amazing possibility ? 
@@ -27,7 +27,8 @@ SSH server basic setup, for "password less" login (with security) and strategic 
  * This exercice is an effective way to do clever things for your home with embeded devices without huges professionals 
  skills in development while staying serious at growing your competences with confidence and direct practical application !
  (Led lightening (for growing plant), heater&temperature monitoring, water pump, alarm & webcam security,
- ai&webcam interpretation with opencv ect...) that's real and it's now !
+ ai&webcam interpretation with opencv ect...) that began in your computer and go around that's real 
+ that's science (hopefully) and it's now !
  
  
 ```
