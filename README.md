@@ -52,19 +52,19 @@ we have to pull this at our own avantage as community of user ! sharing controll
 * So, get your yellow palm ready for a true soft start !
 		       
 ***********************************************************************************
-* install open ssh if not allready installed:
+* Install open ssh if not allready installed:
 ```
 $ sudo apt install openssh-server
 ```
 
-* the first step is to make a public and private key (for encrypted link.)
+* The first step is to make a public and private key (for encrypted link.)
 ```
 $ sudo ssh-keygen -t rsa
 ```
 " just enter blank text for "passphrase"
 " then locate the path of the genrated key file: ( ~/.ssh in general )
 
-* step2 copy the key on the server:
+* Step2 copy the key on the server:
 
 on the server side type:
 ```
@@ -74,19 +74,19 @@ $ ip addr
 ```
 and note the ssh server ip for wlan0... that your ip server
 
-* on your client side:
+* On your client side:
 ```
 $ sudo ssh-copy-id -i ~/.ssh/id_rsa username@ipserver
 ```
 of couse replace your username and ipserver with your local server session characteristic...
 
-* then now you can simply login remotely on server with:
+* Then now you can simply login remotely on server with:
 ```
 $ ssh username@ipserver 
 ```
 no password are needed anymore for login via ssh from client
 
-* if everything work well 
+* If everything work well 
 on **(server side !) you can now go in:
 ```
 $ sudo vim /etc/ssh/sshd_config 
@@ -113,7 +113,7 @@ PasswordAuthentication to "no" in ```/etc/ssh/sshd_config```
 by the way the list of allowed keys by the server are stored in plane text 
 at ~/.ssh on server side.
 
-* next type on terminal (always on serverside):
+* Next type on terminal (always on serverside):
 ```
 $ sudo systemctl restart ssh
 ```
@@ -122,7 +122,7 @@ $ sudo systemctl restart ssh
 Now you can code a simple program on the client side for controling gpio or anything remotly !
 more on this in a moment... 
 
-* for controling the server (on server side):
+* For controling the server (on server side):
 ```
 $ sudo systemctl disable ssh
 ```
@@ -140,23 +140,23 @@ $ sudo systemctl status ssh
 ```
 ( for cheking actual status )
 
-* for additional security mesures:
+* For additional security mesures:
 
    * use a compiled and minimalist linux kernel.
    * "failtoban" and "ufw"/iptables setup is also recomanded.
 	
-* remotely control the server:
+* Remotely control the server:
 
   "the server restrict distant sudo command...
   and so, a password are claim from the server at each "super user domain" (sudo) commad
   for that we have to set the server to ask for superuser password only ONE time at the
   bigenning of the journey/session..."
 
-* on server side type:
+* On server side type:
 ```
 $ sudo visudo 
 ```
-* under the line starting %root or %admin type
+* Under the line starting %root or %admin type
 your_user_name_session ALL=NOPASSWD: ALL
 
 like this: (julien is my username)
@@ -168,9 +168,9 @@ F2 key for saving with nano ( be care full to don't make error before saving you
 your login file, futher more a warning is triggered in case of error before save as protection ! 
 read well the escape key for qiting without saving the instructions !
 
-* then loggout & login your session for update the server status.
+* Then loggout & login your session for update the server status.
 
-* now you have type your password only one time by session !!!
+* Now you have type your password only one time by session !!!
 
 * Now for security purpose you have to log on server via $ ssh username@serverip 
 once then type sudo apt update (or anything else in sudo only one time !) 
@@ -199,7 +199,7 @@ an education of the wild world must be done. and god know that's a delicate topi
 So every thing comme with fear in this digital and wild world... caution never harm !
 ******************************************************************************************************
 
-* the following is a unix more advance way to run command in pure C:
+* The following is a unix more advance way to run command in pure C:
 from https://linuxhint.com/posix-spawn-c-programming/
 ```
 #include <stdlib.h>
