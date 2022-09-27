@@ -275,9 +275,9 @@ void main(int argc, char* argv[])
   ( after 30s or more you will get a full description of your network 
   devices and open ports for every one of them ).
   
-  * For closing port the easiest is to use a fire wall program
-    for configuring the linux ip table ufw in what it's name stand for
-    uncomplicate firewall:
+  * For closing port the easiest way is to use a fire wall program
+    for configuring the linux ip table ufw is what it's name stand for:
+    "uncomplicate fire wall"
    ```
    sudo apt install ufw
    ```
