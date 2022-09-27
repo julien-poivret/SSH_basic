@@ -53,7 +53,7 @@ we have pull this at our own avantage as community of user !
 ***********************************************************************************
 * install open ssh if not allready installed:
 ```
-sudo apt install openssh-server
+$ sudo apt install openssh-server
 ```
 
 * the first step is to make a public and private key (for encrypted link.)
