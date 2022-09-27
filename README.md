@@ -181,14 +181,20 @@ system("ssh -t username@sshipserver touch ~/My_yellow_palm");
 ```
 you can do anything you want easly on your private home network with safety and encryption. 
 
-***********************************************************************************
+*****************************************************************************************************
 Is that things is for naive children ? certainly not ! but 
 it's bound to the comunication domain with the whole security issue comming with ! 
+
 I say that because often we see 8 years old childrens with raspberrypi on picture promotion. 
 that fun and positive ! but a computer is open on internet and bad people may 
-be every where even inside your smart wc !!! we have to be aware of that a soon as 
-possible !   -> next notice server socket through outside internet connection Yeah !
-***********************************************************************************
+be every where even inside your smart wc !!! 
+We have to be aware of that a soon as possible !   
+-> what if the next notice will be onserver socket through outside internet connection !
+nothing bad except that involve penal responsabillity out of the scope of a children or 
+young studen... what if my 14 years hold girl have a webcam set and a full access on internet in her bed room ?
+an education of the wild world must be done. and god know that a delicate topic that we cannot avoid...
+so every thing comme with fear in this digital wild world.
+******************************************************************************************************
 
 * the following is a unix more advance way to run command in pure C:
 
