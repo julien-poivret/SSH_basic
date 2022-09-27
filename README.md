@@ -256,3 +256,53 @@ void main(int argc, char* argv[])
 }
 ```
 ******************************************************************************
+
+* For checking all open port of your network:
+  * install nmap:
+  ```
+  $ sudo apt install nmap
+  ```
+* check your Ipv4 network source adress like something in wlan0:
+  look at someting like this inet 192.168.1.3\24
+  in wlan0 or eth0 with:
+  ```
+  ip addr
+  ```
+ * Then scan your network for all devices and open ports:
+  ```
+  nmap 192.168.1.14\24 
+  ```
+  ( after 30s or more you will get a full description of your network 
+  devices and open ports for every one of them ).
+  
+  * For closing port the easiest is to use a fire wall program
+    for configuring the linux ip table ufw in what it's name stand for
+    uncomplicate firewall:
+   ```
+   sudo apt install ufw
+   ```
+   ```
+   sudo ufw enable 
+   ```
+   ( enable firewall now and at each start up)
+   ```
+   sudo ufw allow ssh
+   ```
+   ( allow only port 22 ) the server must be reloaded with: 
+   ```
+   sudo apt ufw reload
+   ```
+   ( reload the server )
+   ```
+   sudo ufw staus verbose
+   ```
+   ( for checking the config )
+   ```
+   sudo ufw disable
+   ```
+   ( stop the server )
+   
+   ```
+   sudo apt ufw help
+   ```
+   ( all option are explained )
