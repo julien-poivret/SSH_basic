@@ -22,7 +22,7 @@ SSH server basic setup, (for "password less" login) and strategic domotic home c
  while keeping the full transparency for the end user. 
  so why closing eyes on this amazing possibility ? 
  
- C++ QT library interface is the pro way to fix the graphic aspect (even on raspberry Pi)!
+ * C++ and QT library interface is the pro way to fix the graphic aspect (even on raspberry Pi)!
  
 ```
                      The penguins and the raspberry take care of your home !
