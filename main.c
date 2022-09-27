@@ -53,7 +53,8 @@ int main(int argc,char* argv[]){
 	
 	// Command line instructions.
 	// system("ssh -t debian@192.168.3.12 touch My_yellow_palm");
-	run_cmd("ssh -t debian@192.168.3.12 touch My_better_yellow_palm");
+	run_cmd("ssh -t debian@192.168.3.12 touch My_better_yellow_palm"); // simply create a file in ~/ on server.
+	
 	
 	// Data structure initialisation.
 	transient_log _A[2] = {{3,"Exupery \"biplan\"\0"},{4,"\"Short takeoff\""}};
