@@ -23,9 +23,9 @@ SSH server basic setup, for "password less" login (with security) and strategic 
  so why closing eyes on this amazing possibility ? 
  
  * C++ and QT library interface is the pro way to fix the graphic aspect (even on raspberry Pi)!
- * (look at dremasource lab https://www.dreamsourcelab.com their qt interface is like an android app or a swift apple app )
- * professional may want to brake that possibility one day or another... 
- * but for now you can do that on a raspberryPi with of course pro skill and serious work !
+   (look at dremasource lab https://www.dreamsourcelab.com their qt interface is like an android 
+   app or a swift apple app ) professional may want to brake that possibility one day or another... 
+   but for now you can do that on a raspberryPi with of course pro skill and serious work !
  
  * This exercice is an effective way to do clever things for your home with embeded devices without huges professionals 
  skills in development while staying serious at growing your competences with confidence and a direct practical application !
