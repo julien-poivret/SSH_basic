@@ -197,7 +197,7 @@ but once it's done it's ok for all the day !!! ( it's like a bluetooth pairing )
 system("ssh -t username@sshipserver touch ~/My_yellow_palm"); 
 // Warning ! Your mind must be pure ! now you remotely control a computer !
 ```
-... you can do anything you want fromt the coded C client side through your private home network 
+... you can do anything you want from the coded C client side through your private home network 
 with safety and encryption ! 
 
 *****************************************************************************************************
