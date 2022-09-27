@@ -1,6 +1,6 @@
 # SSH_basic
 ```
-SSH server basic setup, (for "password less" login) and strategic domotic home control.
+SSH server basic setup, for "password less" login (with security) and strategic domotic home control.
                            
                                              o
                                             (^)
