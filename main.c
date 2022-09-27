@@ -7,7 +7,9 @@
 #include <sys/wait.h>
 #include <string.h>
 /*
-	 Some documentation.
+	 Some documentation on data structures lists for database.
+       	   and remote server instructions on home private network.
+	     ( tested and working. on beagelbord AI debian 11 )
 */
 
 typedef struct{
