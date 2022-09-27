@@ -85,7 +85,8 @@ and add the two following text line instructions:
 PubkeyAuthentication yes
 PasswordAuthentication no
 ```
-( this will disable password login on the server )
+( this will disable password login on the server via ssh login the 
+encrypted key will be used instead )
 
 !!! only encrypted link will work from now... !!!
 (*** established by the ssh-copy-id command... ***)
