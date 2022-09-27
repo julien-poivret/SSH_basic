@@ -156,7 +156,7 @@ possible !   -> next notice server socket through outside internet connection Ye
 ***********************************************************************************
 
 the following is a unix more advance way to run command in pure C:
-***************************C code**************************************************
+'''
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -194,4 +194,5 @@ void main(int argc, char* argv[])
     run_cmd(argv[1]);
     return;
 }
+'''
 ******************************************************************************
