@@ -87,6 +87,7 @@ on **(server side !) you can now go in:
 $ sudo vim /etc/sshd_config 
 ```
 and add the two following text line instructions:
+
 ```
 PubkeyAuthentication yes
 PasswordAuthentication no
@@ -120,19 +121,19 @@ for controling the server (on server side):
 	```
 	$ sudo systemctl disable ssh
         ```
-	( will not start up ssh server anymore, after reboot... )
+( will not start up ssh server anymore, after reboot... )
 	```
 	$ sudo systemctl stop ssh
 	```
-	( will just stop for this session the server)
+( will just stop for this session the server)
 	```
 	$ sudo systemctl enable ssh
 	```
-	(start the server)
+(start the server)
 	```
 	$ sudo systemctl status ssh    
         ```
-	( for cheking actual status )
+( for cheking actual status )
 
 for additional security mesures:
         * use a compiled and minimalist linux kernel.
