@@ -54,14 +54,14 @@ as community user !
 		       
 ***********************************************************************************
 
--> first step is to make a public and private key (for encrypted link.)
+* -> first step is to make a public and private key (for encrypted link.)
 ```
 $ sudo ssh-keygen -t rsa
 ```
 " just enter blank text for "passphrase"
 " then locate the path of the genrated key file: ( ~/.ssh in general )
 
-->step2 copy the key on the server:
+* ->step2 copy the key on the server:
 
 on the server side type:
 ```
@@ -71,17 +71,17 @@ $ ip addr
 ```
 and note the ssh server ip for wlan0... that your ipserver
 
-on your client side:
+* on your client side:
 ```
 $ sudo ssh-copy-id -i ~/.ssh/id_rsa username@ipserver
 ```
-then now you can simply login remotely on server with:
+* then now you can simply login remotely on server with:
 ```
 $ ssh username@ipserver 
 ```
 no password are needed anymore for login via ssh from client
 
-if everything work well 
+* if everything work well 
 on **(server side !) you can now go in:
 ```
 $ sudo vim /etc/sshd_config 
@@ -108,7 +108,7 @@ PasswordAuthentication to "no"
 by the way the list of allowed keys by the server are stored in plane text 
 at ~/.ssh on server side.
 
-next type on terminal (**serverside!):
+* next type on terminal (**serverside!):
 ```
 $ sudo systemctl restart ssh
 ```
@@ -117,7 +117,7 @@ $ sudo systemctl restart ssh
 Now you can code a simple program on the client side for controling gpio or anything remotly !
 more on this in a moment... 
 
-for controling the server (on server side):
+* for controling the server (on server side):
 ```
 $ sudo systemctl disable ssh
 ```
@@ -135,20 +135,21 @@ $ sudo systemctl status ssh
 ```
 ( for cheking actual status )
 
-for additional security mesures:
-        * use a compiled and minimalist linux kernel.
-	* "failtoban" and "ufw"/iptables setup is also recomanded.
+* for additional security mesures:
+
+   * use a compiled and minimalist linux kernel.
+   * "failtoban" and "ufw"/iptables setup is also recomanded.
 	
-remotely control the server:
+* remotely control the server:
 the server restrict distant sudo command a passord are claim from the server
 for that we have to set the server to ask for superuser passwor only one time at the
 begening of the journey/session...
 
-on server side type:
+* on server side type:
 ```
 $ sudo visudo 
 ```
-under the line starting %root or %admin type
+* under the line starting %root or %admin type
 your_user_name_session ALL=NOPASSWD: ALL
 
 like this: (julien is my username)
@@ -160,16 +161,16 @@ F2 key for saving with nano ( be care full to don't make error before saving you
 your login file, futher more a warning is triggered in case of error before save as protection ! 
 read well the escape key for qiting without saving the instructions !
 
-*then loggout & login your session for update the server status.
+* then loggout & login your session for update the server status.
 
 * now you have type your password only one time by session !!!
 
-*Now for security purpose you have to log on server via $ ssh username@serverip 
+* Now for security purpose you have to log on server via $ ssh username@serverip 
 once then type sudo apt update (or anything else in sudo only one time !) 
 this allow the next comming sudo instructions to run properly 
 but once it's done it's ok for all the day !!! ( it's like a bluetooth pairing )
 
-Now with a simple C line code like this:
+* Now with a simple C line code like this:
 ```
 system("ssh -t username@sshipserver touch ~/My_yellow_palm"); // Warning ! Your mind must be pure ! now you remotely control a computer !
 ```
@@ -184,7 +185,7 @@ be every where even inside your smart wc !!! we have to be aware of that a soon 
 possible !   -> next notice server socket through outside internet connection Yeah !
 ***********************************************************************************
 
-the following is a unix more advance way to run command in pure C:
+* the following is a unix more advance way to run command in pure C:
 
 ```
 #include <stdlib.h>
