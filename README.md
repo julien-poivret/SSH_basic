@@ -2,11 +2,11 @@
 ```
 SSH server basic setup, (for "password less" login) and strategic domotic home control.
                            
-                                             o
-                                            (^)
-                                           -=H=- BISHOP
-                                            ] [
-                                           /___\
+                                               o
+                                              (^)
+                                             -=H=- BISHOP
+                                              ] [
+                                             /___\
   
 ```
  * ( A not So crazy way, to take the hand on your wifi domain and any GPIOs via
