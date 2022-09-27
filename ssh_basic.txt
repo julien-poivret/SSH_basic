@@ -145,13 +145,13 @@ now you can do anything you want easly on your home network.
 is that things is for naive children ? certenly not but it's bound to comunication 
 domain with the whole security issue comming with! 
 i say that because often we see 8 years old childrens with raspberrypi picture 
-that fun and positive ! but a computer it's open on internet and bad people my 
+that fun and positive ! but a computer is open on internet and bad people my 
 be every where even inside your smart wc !!! we have to be aware of that a soon as 
-possible !       next server socket through outside internet connection Yeah !
+possible ! -> next server socket through outside internet connection Yeah !
 ***********************************************************************************
 
 
-the following is a unix more advance way to run command:
+the following is a unix more advance way to run command in pure C:
 
 #include <stdlib.h>
 #include <stdio.h>
