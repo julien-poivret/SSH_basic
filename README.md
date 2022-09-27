@@ -25,9 +25,9 @@ SSH server basic setup, (for "password less" login) and strategic domotic home c
  * C++ and QT library interface is the pro way to fix the graphic aspect (even on raspberry Pi)!
  
  * This exercice is an effective way to do clever things for your home with embeded devices without huges professionals 
- skills in development while staying serious and growing your competences with confidence and direct practical application !
+ skills in development while staying serious at growing your competences with confidence and direct practical application !
  (Led lightening (for growing plant), heater&temperature monitoring, water pump, alarm & webcam security,
- ai webcam interpretation with opencv ect...) that's real and it's now !
+ ai&webcam interpretation with opencv ect...) that's real and it's now !
  
  
 ```
