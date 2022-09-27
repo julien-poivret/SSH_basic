@@ -49,39 +49,42 @@ without this pure opensource philosophy, we are stuck in corporation, politic & 
 ***********************************************************************************
 
 -> first step make a public and private key for encrypted link.
-
+```
 $ sudo ssh-keygen -t rsa
-
+```
 " just enter no passphrase
 " then locate the path of the genrated key ( ~/.ssh in general )
 
 ->step2 copy the key on the server:
 
 **(on the server side !!!!!!!!!):
-
+```
 $ sudo systemctl enable ssh 
 $ sudo systemctl start ssh 
 $ ip addr 
+```
 and note the ssh server ip for wlan0
 
 **(on your client side!!!!!!!!!)
-
+```
 $ sudo ssh-copy-id -i ~/.ssh/id_rsa username@ipserver
-
+```
 then now you can simply login remotely on server with 
-
+```
 $ ssh username@ipserver 
-
+```
 no password are needed anymore...
 
 if everything work well 
 on **(server side !) you can now go in:
-
-$sudo vim /etc/sshd_config 
-
+```
+$ sudo vim /etc/sshd_config 
+```
 and add the two following text line instructions:
+```
 PubkeyAuthentication yes
 PasswordAuthentication no
+```
 ( this will disable password login on the server )
 
 !!! only encrypted link will work from now... !!!
@@ -98,22 +101,31 @@ by the way the list of allowed keys by the server are stored in plane text
 at ~/.ssh on server side.
 
 next type on terminal (**serverside!):
+```
 $ sudo systemctl restart ssh
-for refreshing the new list of host allowed on the server.
+```
+( for refreshing the new list of host allowed on the server ).
 
 Now you can code a simple program for controling gpio or anything remotly with 
 simple command line as simple as that !!! (  more on this in a moment... )
 
 for controling the server (on server side):
-	
+	```
 	$ sudo systemctl disable ssh
-        ( will not start up ssh server anymore, after reboot... )
+        ```
+	( will not start up ssh server anymore, after reboot... )
+	```
 	$ sudo systemctl stop ssh
+	```
 	( will just stop for this session the server)
+	```
 	$ sudo systemctl enable ssh
+	```
 	(start the server)
+	```
 	$ sudo systemctl status ssh    
-        ( for cheking actual status )
+        ```
+	( for cheking actual status )
 
 additional security program:
         * use a compiled and minimalist linux kernel.
@@ -122,7 +134,9 @@ additional security program:
 special trick for remote control from program:
 
 for on server password restriction type (on the server side!):
+```
 $ sudo visudo 
+```
 under the line starting %root or %admin type
 your_user_name_session ALL=NOPASSWD: ALL
 
@@ -142,8 +156,10 @@ once then type sudo apt update (or anything else in sudo one time !)
 this allow the next comming sudo instructions to run properly 
 but once done one time it's ok for all the day !!! ( it's like a bluetooth pairing )
 
-Now with a simple C line code like this: 
+Now with a simple C line code like this:
+```
 system("ssh -t username@sshipserver touch ~/My_yellow_palm"); // Warning ! Your mind must be pure ! now you remotely control a computer !
+```
 you can do anything you want easly on your private home network with safety and encryption. 
 
 ***********************************************************************************
