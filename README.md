@@ -17,15 +17,18 @@ SSH server basic setup, for "password less" login (with security) and strategic 
                                  (at my sens...)
  * Allow for intance to possibly (from touch screen) with simple "tinker python 
  interface" remotely control any switchs, alarm, light ect with universal time referance, 
- internet update of the devices on the wlan ...
+ internet update staus of the devices on your wlan (wifi network).
  * This technic is an easy way of doing this without heavy new software skills 
  while keeping the full transparency for the end user. 
  so why closing eyes on this amazing possibility ? 
  
  * C++ and QT library interface is the pro way to fix the graphic aspect (even on raspberry Pi)!
+ * (look at dremasource lab https://www.dreamsourcelab.com their qt interface is like an android app or a swift apple app )
+ * professional may want to brake that possibility one day or another... 
+ * but for now you can do that on a raspberryPi with of course pro skill and serious work !
  
  * This exercice is an effective way to do clever things for your home with embeded devices without huges professionals 
- skills in development while staying serious at growing your competences with confidence and direct practical application !
+ skills in development while staying serious at growing your competences with confidence and a direct practical application !
  (Led lightening (for growing plant), heater&temperature monitoring, water pump, alarm & webcam security,
  ai&webcam interpretation with opencv ect...) that began in your computer and go around that's real 
  that's science (hopefully) and it's now !
