@@ -146,9 +146,11 @@ $ sudo systemctl status ssh
    * "failtoban" and "ufw"/iptables setup is also recomanded.
 	
 * remotely control the server:
-the server restrict distant sudo command a passord are claim from the server
-for that we have to set the server to ask for superuser passwor only one time at the
-begening of the journey/session...
+
+  "the server restrict distant sudo command...
+  and so, a password are claim from the server at each super user commad
+  for that we have to set the server to ask for superuser password only ONE time at the
+  begening of the journey/session..."
 
 * on server side type:
 ```
