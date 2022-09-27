@@ -113,17 +113,17 @@ this will disable password login on the server via ssh login from client...
 !!! So only encrypted link will work from now... !!!
 (*** established by the ssh-copy-id command... ***)
 
-"switch back to PasswordAuthentication yes if you want to reenable remote connection via 
-password for eventualy adding other parrallel clients this allow to restart
-the procedure on each new clients localy... by generating encrypted key with ( the above method ),
+"switch back to PasswordAuthentication yes if you want to re-enable remote connection via 
+password for eventualy adding other parrallel clients, this allow to restart
+the procedure on each new clients locally... by generating encrypted key with ( the above method ),
 then link them with the ssh-copy-id command (for every singel one...)
 and once all links are made lock the server again by switching 
 PasswordAuthentication to "no" in ```/etc/ssh/sshd_config```
 
 by the way the list of allowed keys by the server are stored in plane text 
-at ~/.ssh on server side.
+at ~/.ssh (on server side).
 
-* Next type on terminal (always on serverside):
+* Next type on terminal (always on server side):
 ```
 $ sudo systemctl restart ssh
 ```
