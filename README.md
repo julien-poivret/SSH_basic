@@ -205,7 +205,7 @@ be every where even inside your smart wc !!! We have to be aware of that a soon 
 What if the next notice will be on server socket through outside internet connection !?
 nothing bad !except, this involve penal responsabillity out of the scope of a children or 
 young student... what if my 14 years hold girl have a webcam set with a full access on internet in her bed room ?!
-an education of the wild world must be done. and God know that's a delicate topic... amd we cannot avoid it...
+an education of the wild world must be done. and God know that's a delicate topic... and we cannot avoid it...
 So every thing comme with fear and risk in this digital and wild world... So caution never harm !
 ******************************************************************************************************
 
