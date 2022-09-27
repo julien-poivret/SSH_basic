@@ -2,11 +2,11 @@
 ```
 SSH server basic setup, (for "password less" login) and strategic domotic home control.
                            
-                                                      o
-                                                     (^)
-                                                    -=H=- BISHOP
-                                                     ] [
-                                                    /___\
+                                             o
+                                            (^)
+                                           -=H=- BISHOP
+                                            ] [
+                                           /___\
   
 ```
  * ( A not So crazy way, to take the hand on your wifi domain and any GPIOs via
@@ -23,26 +23,26 @@ SSH server basic setup, (for "password less" login) and strategic domotic home c
  so why closing eyes on this amazing possibility ? 
  !! C++ qt interface is the pro way to fix the graphic aspect !
 ```
-                              The penguins and the raspberry take care of your home :)
+                      The penguins and the raspberry take care of your home :)
 			      
-                                       .-"""-.                          .~~.   .~~.
-                                      '       \                        '. \ ' ' / .'
-                                     |,.  ,-.  |                        .~ .~~~..~.
-                                     |()L( ()| |                       : .~.'~'.~. :
-                                     |,'  `".| |                      ~ (   ) (   ) ~
-                                     |.___.',| `           &         ( : '~'.~.'~' : )
-                                    .j `--"' `  `.                    ~ .~ (   ) ~. ~
-                                   / '        '   \                    (  : '~' :  ) Raspberry Pi
-                                  / /          `   `.                   '~ .~~~. ~'
-                                 / /            `    .                      '~'
-                                / /              l   |
-                               . ,               |   |
-                               ,"`.             .|   |
-                               .'   ``.          | `..-'l
-                             |       `.`,        |      `.
-                             |         `.    __.j         )
-                             |__        |--""___|      ,-'
-                                `"--...,+""""   `._,.-' mh Linux
+                               .-"""-.                          .~~.   .~~.
+                              '       \                        '. \ ' ' / .'
+                             |,.  ,-.  |                        .~ .~~~..~.
+                             |()L( ()| |                       : .~.'~'.~. :
+                             |,'  `".| |                      ~ (   ) (   ) ~
+                             |.___.',| `           &         ( : '~'.~.'~' : )
+                            .j `--"' `  `.                    ~ .~ (   ) ~. ~
+                           / '        '   \                    (  : '~' :  ) Raspberry Pi
+                          / /          `   `.                   '~ .~~~. ~'
+                         / /            `    .                      '~'
+                        / /              l   |
+                       . ,               |   |
+                       ,"`.             .|   |
+                    .'   ``.          | `..-'l
+                  |       `.`,        |      `.
+                  |         `.    __.j         )
+                  |__        |--""___|      ,-'
+                     `"--...,+""""   `._,.-' mh Linux
 	         		         
 ```
 ( A Raspberry pi or beagelboard are recommanded for regular security updates and aviability ... )
