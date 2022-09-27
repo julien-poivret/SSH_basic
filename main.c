@@ -6,10 +6,11 @@
 #include <spawn.h>
 #include <sys/wait.h>
 #include <string.h>
+
 /*
-	 Some documentation on data structures lists for database.
-       	   and remote server instructions on home private network.
-	     ( tested and working. on beagelbord AI debian 11 )
+	     Some documentation on data structures lists for database storage.
+       	 and remote server instructions for home private network throught ssh server.
+	        ( tested and working. on beagelbord AI last Debian 11 build )
 */
 
 typedef struct{
@@ -52,7 +53,7 @@ int main(int argc,char* argv[]){
 	
 	// Command line instructions.
 	// system("ssh -t debian@192.168.3.12 touch My_yellow_palm");
-	run_cmd("ssh -t debian@192.168.3.12 touch My_yellow_palm");
+	run_cmd("ssh -t debian@192.168.3.12 touch My_better_yellow_palm");
 	
 	// Data structure initialisation.
 	transient_log _A[2] = {{3,"Exupery \"biplan\"\0"},{4,"\"Short takeoff\""}};
