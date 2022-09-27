@@ -88,7 +88,7 @@ no password are needed anymore for login via ssh from client
 * if everything work well 
 on **(server side !) you can now go in:
 ```
-$ sudo vim /etc/sshd_config 
+$ sudo vim /etc/ssh/sshd_config 
 ```
 and add the two following text line instructions:
 
@@ -102,17 +102,17 @@ this will disable password login on the server via ssh login from client...
 !!! So only encrypted link will work from now... !!!
 (*** established by the ssh-copy-id command... ***)
 
-"switch to PasswordAuthentication yes for reenabling remote connection via 
+"switch back to PasswordAuthentication yes if you want to reenable remote connection via 
 password for eventualy adding other parrallel clients this allow to restart
-the procedure on each new clients localy by gnerating encrypted key
+the procedure on each new clients localy... by generating encrypted key with ( the above method ),
 then link them with the ssh-copy-id command (for every singel one...)
-and once all link are made lock the server by switching 
-PasswordAuthentication to "no"
+and once all links are made lock the server again by switching 
+PasswordAuthentication to "no" in ```/etc/ssh/sshd_config```
 
 by the way the list of allowed keys by the server are stored in plane text 
 at ~/.ssh on server side.
 
-* next type on terminal (**serverside!):
+* next type on terminal (always on serverside):
 ```
 $ sudo systemctl restart ssh
 ```
