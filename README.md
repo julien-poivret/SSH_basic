@@ -192,8 +192,8 @@ We have to be aware of that a soon as possible !
 -> what if the next notice will be onserver socket through outside internet connection !
 nothing bad except that involve penal responsabillity out of the scope of a children or 
 young studen... what if my 14 years hold girl have a webcam set and a full access on internet in her bed room ?
-an education of the wild world must be done. and god know that a delicate topic that we cannot avoid...
-so every thing comme with fear in this digital wild world.
+an education of the wild world must be done. and god know that's a delicate topic that we cannot avoid...
+So every thing comme with fear in this digital and wild world.
 ******************************************************************************************************
 
 * the following is a unix more advance way to run command in pure C:
