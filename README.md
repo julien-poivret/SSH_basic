@@ -1,9 +1,6 @@
 # SSH_basic
 ```
-SSH server basic setup.
-
-*****************************************************************************
-                SSH Server Config for "password less" login. 
+SSH server basic setup, (for "password less" login) and strategic domotic home control.
                            
                                      o
                                     (^)
@@ -11,20 +8,20 @@ SSH server basic setup.
                                     ] [
                                    /___\
   
-*****************************************************************************
 ```
-( A not So crazy way to take the hand on your wifi domain and any GPIOs via
-                     simple C or python programs. )
- In that way your program can internally talk to your remote servers without 
+ * ( A not So crazy way, to take the hand on your wifi domain and any GPIOs via
+ simple C or python programs. )
+ * In that way your program can internally talk to your remote servers without 
  having to type password at each time.
- that the added value of any hosted linux single board with embedded wifi.
- (at my sens...)
- possibly from touch screen fith simple tinker python interface you can 
- remotely control any switchs, alarm, light ect with universal time referance, 
+ (that the added value of any hosted linux single board with embedded wifi.)
+                                 (at my sens...)
+ * allow for intance to possibly (from touch screen) with simple tinker python 
+ interface remotely control any switchs, alarm, light ect with universal time referance, 
  auto boot up and internet update of the wlan status device...
- this technic is an easy way of doing this without heavy new software skills 
- while keeping the full transparency for the end user. so why closing eyes 
- on this amazing possibility. 
+ * this technic is an easy way of doing this without heavy new software skills 
+ while keeping the full transparency for the end user. 
+ so why closing eyes on this amazing possibility ? 
+ !! C++ qt interface is the pro way to fix the graphic aspect !
 ```
                              The penguins take care of your home :)
                                             .-"""-.
@@ -46,22 +43,27 @@ SSH server basic setup.
                                 |__        |--""___|      ,-'
                                    `"--...,+""""   `._,.-' mh
 ```
-( A Raspberry pi or beagelboard are recommanded for regular security updates aviability ... )
-... linux is the dreamed platform for learning and tweaking everything without almost no secret for developer ...
-without this pure opensource philosophy, we are stuck in corporation, politic & dictat we pull this at our own avantage 
-as community user !
-                       So, get your yellow palm ready here a true soft start !
+( A Raspberry pi or beagelboard are recommanded for regular security updates and aviability ... )
+... linux is the dreamed platform for learning and tweaking everything without almost no secret for the developer ...
+without this pure opensource philosophy, we are stuck in corporation, politic & dictat 
+we have pull this at our own avantage as community of user !
+
+* So, get your yellow palm ready for a true soft start !
 		       
 ***********************************************************************************
+* install open ssh if not allready installed:
+```
+sudo apt install openssh-server
+```
 
-* -> first step is to make a public and private key (for encrypted link.)
+* the first step is to make a public and private key (for encrypted link.)
 ```
 $ sudo ssh-keygen -t rsa
 ```
 " just enter blank text for "passphrase"
 " then locate the path of the genrated key file: ( ~/.ssh in general )
 
-* ->step2 copy the key on the server:
+* step2 copy the key on the server:
 
 on the server side type:
 ```
