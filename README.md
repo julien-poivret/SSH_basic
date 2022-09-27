@@ -277,19 +277,23 @@ void main(int argc, char* argv[])
   devices and open ports for every one of them ).
   
   * For closing port the easiest way is to use a fire wall program
-    for configuring the linux ip table ufw is what it's name stand for:
-    "uncomplicate fire wall"
+    and masking open port from the external world. 
+    ufw is what it's name stand for:
+    "uncomplicate fire wall" so install it:
    ```
    sudo apt install ufw
    ```
+   * Then start it: 
    ```
    sudo ufw enable 
    ```
-   ( enable firewall now and at each start up)
+   ( enable firewall now and at each start up )
+   ( now everything is lockdown by default )
    ```
    sudo ufw allow ssh
    ```
-   ( allow only port 22 ) the server must be reloaded with: 
+   ( allow only port 22 ) 
+   * Next the server must be reloaded with: 
    ```
    sudo apt ufw reload
    ```
