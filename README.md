@@ -136,15 +136,19 @@ more on this in a moment...
 ```
 $ sudo systemctl disable ssh
 ```
-( will not start up ssh server anymore, after reboot... )
+( stop and will not start up the ssh server anymore after reboot )
 ```
 $ sudo systemctl stop ssh
 ```
-( will just stop for this session the server)
+( will just stop the server for this session )
 ```
 $ sudo systemctl enable ssh
 ```
-(start the server)
+( start the server and enable it at boot time )
+```
+$ sudo systemctl start ssh
+```
+( start the server for this session )
 ```
 $ sudo systemctl status ssh    
 ```
