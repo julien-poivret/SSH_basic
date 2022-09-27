@@ -101,7 +101,7 @@ on **(server side !) you can now go in:
 ```
 $ sudo vim /etc/ssh/sshd_config 
 ```
-and add the two following text line instructions:
+and add the two following text lines instructions:
 
 ```
 PubkeyAuthentication yes
