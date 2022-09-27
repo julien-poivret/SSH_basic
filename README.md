@@ -127,10 +127,10 @@ under the line starting %root or %admin type
 your_user_name_session ALL=NOPASSWD: ALL
 
 like this:
-
+```
 %sudo   ALL=(ALL:ALL) ALL
 julien ALL=NOPASSWD: ALL
-
+```
 f2 for saving with nano ( be care full to don't make error before saving you can mess your login file
 a warning is triggered in case of error before save as protectio read well the escape without saving instructions )
 then loggout & login your session for update the server status.
