@@ -8,9 +8,9 @@
 #include <string.h>
 
 /*
-	     Some documentation on data structures lists for database storage.
-     and remote server instructions for home private network instruction throught ssh server.
-	        ( tested and working. on beagelbord AI last Debian 11 build )
+	        Some documentation on data structures lists for database storage.
+     and remote server instructions for home automated private network managment throught ssh server.
+	          ( tested and working. on beagelbord AI last Debian 11 build )
 */
 
 typedef struct{
@@ -60,12 +60,12 @@ int main(int argc,char* argv[]){
 	transient_log _A[2] = {{3,"Exupery \"biplan\"\0"},{4,"\"Short takeoff\""}};
 	transient_log _B[2] = {{5,"Spining real !"},{6,"hardware is king !"}};
 	transient_log _C[2] = {{7,"Language Machine you have to understand"},{6,"for making differance !"}};
-	// Some print experiment.
+	// Some data access and print experiment.
 	printf("\33[33m\33[2J\33[1;35HData Structure.\33[0m\n");
 	printf("\33[37m\33[3J\33[3;1H %d  ---> %s \33[0m\n",_A[0].count,_A[0].name); 
 	printf("\33[37m\33[3J\33[4;1H %d  ---> %s \33[0m\n",_A[1].count,_A[1].name); 
 	data_read(_B);
-	data_read2(_C); // pointer on pointer 
+	data_read2(_C); // pointer on pointer...
 
 	
 	return EXIT_SUCCESS;
