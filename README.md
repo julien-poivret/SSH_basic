@@ -292,7 +292,7 @@ void main(int argc, char* argv[])
    ```
    sudo apt ufw reload
    ```
-   ( reload the server )
+   ( reload the firewall )
    ```
    sudo ufw staus verbose
    ```
@@ -300,7 +300,7 @@ void main(int argc, char* argv[])
    ```
    sudo ufw disable
    ```
-   ( stop the server )
+   ( stop the firewall )
    
    ```
    sudo apt ufw help
