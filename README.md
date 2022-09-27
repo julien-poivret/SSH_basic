@@ -118,21 +118,21 @@ Now you can code a simple program on the client side for controling gpio or anyt
 more on this in a moment... 
 
 for controling the server (on server side):
-	```
-	$ sudo systemctl disable ssh
-        ```
+```
+$ sudo systemctl disable ssh
+```
 ( will not start up ssh server anymore, after reboot... )
-	```
-	$ sudo systemctl stop ssh
-	```
+```
+$ sudo systemctl stop ssh
+```
 ( will just stop for this session the server)
-	```
-	$ sudo systemctl enable ssh
-	```
+```
+$ sudo systemctl enable ssh
+```
 (start the server)
-	```
-	$ sudo systemctl status ssh    
-        ```
+```
+$ sudo systemctl status ssh    
+```
 ( for cheking actual status )
 
 for additional security mesures:
