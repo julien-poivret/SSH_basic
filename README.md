@@ -1,5 +1,6 @@
 # SSH_basic
-ssh server  basic
+```
+SSH server basic setup.
 
 *****************************************************************************
                 SSH Server Config for "password less" login. 
@@ -11,6 +12,7 @@ ssh server  basic
                                    /___\
   
 *****************************************************************************
+```
 ( A not So crazy way to take the hand on your wifi domain and any GPIOs via
                      simple C or python programs. )
  In that way your program can internally talk to your remote servers without 
