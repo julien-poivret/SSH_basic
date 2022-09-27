@@ -15,16 +15,16 @@ SSH server basic setup, (for "password less" login) and strategic domotic home c
  having to type password at each time.
  (that the added value of any hosted linux single board with embedded wifi.)
                                  (at my sens...)
- * allow for intance to possibly (from touch screen) with simple tinker python 
+ * Allow for intance to possibly (from touch screen) with simple tinker python 
  interface remotely control any switchs, alarm, light ect with universal time referance, 
  auto boot up and internet update of the wlan status device...
- * this technic is an easy way of doing this without heavy new software skills 
+ * This technic is an easy way of doing this without heavy new software skills 
  while keeping the full transparency for the end user. 
  so why closing eyes on this amazing possibility ? 
  
  * C++ and QT library interface is the pro way to fix the graphic aspect (even on raspberry Pi)!
  
- * this exercice is an effective way to do clever things for your home with embeded devices without huges professionals 
+ * This exercice is an effective way to do clever things for your home with embeded devices without huges professionals 
  skills in development while staying serious and growing your competences with confidence and direct practical application !
  (Led lightening (for growing plant), heater&temperature monitoring, water pump, alarm & webcam security,
  ai webcam interpretation with opencv ect...) that's real and it's now !
