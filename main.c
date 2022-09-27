@@ -49,6 +49,11 @@ void data_read2(transient_log data_input[2]){
 }
 
 int main(int argc,char* argv[]){
+	
+	// Command line instructions.
+	// system("ssh -t debian@192.168.3.12 touch My_yellow_palm");
+	run_cmd("ssh -t debian@192.168.3.12 touch My_yellow_palm");
+	
 	// Data structure initialisation.
 	transient_log _A[2] = {{3,"Exupery \"biplan\"\0"},{4,"\"Short takeoff\""}};
 	transient_log _B[2] = {{5,"Spining real !"},{6,"hardware is king !"}};
@@ -59,11 +64,7 @@ int main(int argc,char* argv[]){
 	printf("\33[37m\33[3J\33[4;1H %d  ---> %s \33[0m\n",_A[1].count,_A[1].name); 
 	data_read(_B);
 	data_read2(_C); // pointer on pointer 
-  
-	// Command line instruction.
 
-	// system("ssh -t debian@192.168.3.12 touch My_yellow_palm");
-	run_cmd("ssh -t debian@192.168.3.12 touch My_yellow_palm");
 	
 	return EXIT_SUCCESS;
 }
