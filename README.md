@@ -171,7 +171,7 @@ $ sudo systemctl status ssh
 ```
 $ sudo visudo 
 ```
-* Under the line starting %root or %admin type
+* Under the line starting by %root or %admin type
 your_user_name_session ALL=NOPASSWD: ALL
 
 like this: (julien is my username)
