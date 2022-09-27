@@ -46,7 +46,8 @@ SSH server basic setup, (for "password less" login) and strategic domotic home c
 ( A Raspberry pi or beagelboard are recommanded for regular security updates and aviability ... )
 ... linux is the dreamed platform for learning and tweaking everything without almost no secret for the developer ...
 without this pure opensource philosophy, we are stuck in corporation, politic & dictat 
-we have pull this at our own avantage as community of user !
+
+we have to pull this at our own avantage as community of user ! sharing controlling & teaching !
 
 * So, get your yellow palm ready for a true soft start !
 		       
