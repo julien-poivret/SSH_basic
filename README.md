@@ -62,7 +62,7 @@ we have to pull this at our own avantage as community of user ! sharing controll
 * So, get your yellow palm ready for a true soft start !
 		       
 ***********************************************************************************
-* Install open ssh if not allready installed:
+* Install open ssh (if not allready installed):
 ```
 $ sudo apt install openssh-server
 ```
