@@ -9,7 +9,7 @@
 
 /*
 	     Some documentation on data structures lists for database storage.
-       	 and remote server instructions for home private network throught ssh server.
+     and remote server instructions for home private network instruction throught ssh server.
 	        ( tested and working. on beagelbord AI last Debian 11 build )
 */
 
