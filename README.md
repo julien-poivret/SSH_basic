@@ -203,9 +203,10 @@ I say that because often we see 8 years old childrens with raspberryPi on promot
 well that fun and positive ! but a computer is open on internet and bad people may 
 be every where even inside your smart wc !!! We have to be aware of that a soon as possible !   
 What if the next notice will be on server socket through outside internet connection !?
-nothing bad !except, this involve penal responsabillity out of the scope of a children or 
+nothing bad !except, this involve legal responsabillity out of the scope of a children or 
 young student... what if my 14 years hold girl have a webcam set with a full access on internet in her bed room ?!
-an education of the wild world must be done. and God know that's a delicate topic... and we cannot avoid it...
+an education of the wild world must be done for child teenager and parents ! and God know that's the delicate topic 
+that we cannot avoid...
 So every thing come with fear and risk in this digital and wild world... So caution never harm !
 ******************************************************************************************************
 
