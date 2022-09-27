@@ -200,7 +200,7 @@ So every thing comme with fear in this digital and wild world... caution never h
 ******************************************************************************************************
 
 * the following is a unix more advance way to run command in pure C:
-
+from https://linuxhint.com/posix-spawn-c-programming/
 ```
 #include <stdlib.h>
 #include <stdio.h>
