@@ -19,7 +19,7 @@
  while keeping the full transparency for the end user. so why closing eyes 
  on this amazing possibility. 
 
-                The penguins take care of your home :)
+                   The penguins take care of your home :)
                                 .-"""-.
                                '       \
                               |,.  ,-.  |
@@ -39,9 +39,10 @@
                     |__        |--""___|      ,-'
                        `"--...,+""""   `._,.-' mh
 		 
-     a raspberry pi or beagelboard are recommanded for security reasons.
-linux is the dreamed platform for learning and tweaking everything without him you 
-   are stuck in corporation, politic & dictat ... get your yellow palm ready !
+     A raspberry pi or beagelboard are recommanded for regular security updates.
+but mainly linux is the dreamed platform for learning and tweaking everything...
+without this pure opensource philosophy, we are stuck in corporation, politic & dictat ... 
+                    So, get your yellow palm ready !
 ***********************************************************************************
 
 -> first step make a public and private key for encrypted link.
@@ -75,7 +76,7 @@ on **(server side !) you can now go in:
 
 $sudo vim /etc/sshd_config 
 
-and add two foolowing text line instructions:
+and add the two following text line instructions:
 PubkeyAuthentication yes
 PasswordAuthentication no
 ( this will disable password login on the server )
@@ -98,7 +99,7 @@ $ sudo systemctl restart ssh
 for refreshing the new list of host allowed on the server.
 
 now you can code a simple program controling gpio or anything remotly with 
-simple command line as simple as that !!!
+simple command line as simple as that !!! ( more on this in a moment )
 
 for controling the server (on server side):
 	
@@ -147,12 +148,11 @@ domain with the whole security issue comming with!
 i say that because often we see 8 years old childrens with raspberrypi picture 
 that fun and positive ! but a computer is open on internet and bad people my 
 be every where even inside your smart wc !!! we have to be aware of that a soon as 
-possible ! -> next server socket through outside internet connection Yeah !
+possible !   -> next notice server socket through outside internet connection Yeah !
 ***********************************************************************************
 
-
 the following is a unix more advance way to run command in pure C:
-
+***************************C code**************************************************
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -190,3 +190,4 @@ void main(int argc, char* argv[])
     run_cmd(argv[1]);
     return;
 }
+******************************************************************************
