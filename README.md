@@ -107,8 +107,9 @@ and add the two following text lines instructions:
 PubkeyAuthentication yes
 PasswordAuthentication no
 ```
-this will disable password login on the server via ssh login from client...
-(the encrypted key will be used instead )
+this will disable password login on the server via ssh login from other 
+parallel and non cofigured clients on the network...
+( any configured encrypted keys will be used instead of password login method )
 
 !!! So only encrypted link will work from now... !!!
 (*** established by the ssh-copy-id command... ***)
@@ -116,7 +117,7 @@ this will disable password login on the server via ssh login from client...
 "switch back to PasswordAuthentication yes if you want to re-enable remote connection via 
 password for eventualy adding other parrallel clients, this allow to restart
 the procedure on each new clients locally... by generating encrypted key with ( the above method ),
-then link them with the ssh-copy-id command (for every singel one...)
+then link them with the ssh-copy-id command (for every singel one...) targeting the server,
 and once all links are made lock the server again by switching 
 PasswordAuthentication to "no" in ```/etc/ssh/sshd_config```
 
