@@ -77,6 +77,8 @@ and note the ssh server ip for wlan0... that your ipserver
 ```
 $ sudo ssh-copy-id -i ~/.ssh/id_rsa username@ipserver
 ```
+of couse replace your username and ipserver with your local server session characteristic...
+
 * then now you can simply login remotely on server with:
 ```
 $ ssh username@ipserver 
