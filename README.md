@@ -199,7 +199,7 @@ with safety and encryption !
 Is that things is for naive children ? certainly not ! but 
 it's bound to the communication domain with the whole security issue comming with ! 
 
-I say that because often we see 8 years old childrens with raspberrypi on promotional picture, 
+I say that because often we see 8 years old childrens with raspberryPi on promotional picture, 
 well that fun and positive ! but a computer is open on internet and bad people may 
 be every where even inside your smart wc !!! We have to be aware of that a soon as possible !   
 What if the next notice will be on server socket through outside internet connection !?
