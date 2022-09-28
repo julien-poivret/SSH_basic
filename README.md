@@ -310,7 +310,7 @@ void main(int argc, char* argv[])
    ```
    sudo ufw disable
    ```
-   ( disable the firewall at startup)
+   ( disable the firewall at startup )
    ```
    sudo ufw stop
    ```
