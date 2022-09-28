@@ -285,7 +285,7 @@ void main(int argc, char* argv[])
   ```
   $ ss -tuln
   ```
-  ( but it's local better to grab the network from an outside view in one shoot ...)
+  ( but it's local and subjective better to grab the network from a clean outside machine view in one shoot ...)
   
   * So now for closing open port, the easiest way is to use a fire wall program
     and masking the non usefull open port from the external world.
