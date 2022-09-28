@@ -281,7 +281,7 @@ void main(int argc, char* argv[])
   ( after 30s or more you will get a full description of your network 
   devices and open ports for every one of them ).
   
-  localy on the targeted machine you can also type:
+  localy on the targeted machine you can also type: ( Tcp Udp Listening portNumber )
   ```
   $ ss -tuln
   ```
