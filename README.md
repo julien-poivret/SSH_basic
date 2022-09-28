@@ -132,7 +132,7 @@ at ~/.ssh (on server side).
 ```
 $ sudo systemctl restart ssh
 ```
-( for refreshing the new list of host allowed on the server ).
+( for refreshing the new list of hosts allowed on the server ).
 
 Now you can code a simple program on the client side for controling gpio or anything remotly !
 more on this in a moment... 
@@ -167,7 +167,7 @@ $ sudo systemctl status ssh
 * Remotely control the server:
 
   "the server restrict distant sudo command...
-  and so, a password are claim from the server at each "super user domain" (sudo) commad.
+  and so, a password are claim from the server at each "super user domain" (sudo) commad...
 
 * For that we have to set the server to ask for superuser password only ONE time at the
   bigenning of the journey/session..."
@@ -263,7 +263,7 @@ void main(int argc, char* argv[])
 ```
 ******************************************************************************
 
-* For checking all open port of your network:
+* For checking all open ports of your network:
   * install nmap:
   ```
   $ sudo apt install nmap
@@ -278,28 +278,29 @@ void main(int argc, char* argv[])
   ```
   $ nmap 192.168.1.14\24 
   ```
-  ( after 30s or more you will get a full description of your network 
+  ( after 30s or a bit more you will get a full description of your network 
   devices and open ports for every one of them ).
   
   localy on the targeted machine you can also type: ( Tcp Udp Listening portNumber )
   ```
   $ ss -tuln
   ```
-  ( but it's local and subjective better to grab the network from a clean outside machine view in one shoot ...)
+  ( but it's local and subjective,better to grab the network from a clean outside machine view and in one glance... )
   
   * So now for closing open port, the easiest way is to use a fire wall program
-    and masking the non usefull open port from the external world.
+    and masking the non usefull open port from the external world.(more on this later)
+  
   * Else what you have to uninstall each modules providing an internet outside conection one by one
   * for getting the list of them:
     ```
     $ sudo apt install lsof
     ```
     ( install lsof 'listof?' )
-  * for getting the process id (pid) of application opening a port connection: 
+  * for getting the process id (pid) of every applications which open a port connection on the computer type: 
   ```
   $ sudo lsof -i
   ```
-  * then from pid find the path:
+  * then from pid find the file path: ( in linux everything is a file )
   ```
   $ sudo lsof -p PIDNUMBER
   ```
@@ -307,10 +308,10 @@ void main(int argc, char* argv[])
        * on how it get intalled for eventually be uninstalled in a automated way with an unistall binary ect... 
        * removing every dependency is often not a pratical way, 
          ( if it's a malware better to reinstall linux )
-         but that a neat way to recover the origin of the mysterious pid !
+         but that a neat way to recover the origin of the mysterious process pid !
   
   * Else what ufw is what it's name stand for:
-       "uncomplicate fire wall !" 
+       an "Uncomplicate Fire Wall !" 
   
   * So install it:
    ```
@@ -321,7 +322,7 @@ void main(int argc, char* argv[])
    $ sudo ufw enable 
    ```
    ( enable firewall now and at each start up )
-   ( now everything incoming connection are lockdown by default )
+   * now every incoming connection are lockdown by default !
    ```
    $ sudo ufw allow ssh
    ```
@@ -346,4 +347,4 @@ void main(int argc, char* argv[])
    ```
    $ sudo apt ufw help
    ```
-   ( all option are explained )
+   ( all options are explained )
