@@ -101,12 +101,12 @@ $ ssh username@ipserver
 no password are needed anymore for login via ssh to the server.
 
 * If everything work well 
-on the server side ( with a physical call access or via the ssh login ) ! 
-you can now go in:
+on the server side ( with a physical access or via the ssh login ) ! 
+you can now edit the following config file in:
 ```
 $ sudo vim /etc/ssh/sshd_config 
 ```
-and add the two following text lines instructions inside that file:
+and add the two following text lines instructions:
 
 ```
 PubkeyAuthentication yes
