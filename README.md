@@ -86,7 +86,7 @@ $ sudo systemctl enable ssh
 $ sudo systemctl start ssh 
 $ ip addr 
 ```
-and note the ssh server ip for wlan0... that your ip server
+and note the ssh server ip for wlan0... that's your ip server.
 
 * On your client side:
 ```
