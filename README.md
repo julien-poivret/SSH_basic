@@ -281,10 +281,38 @@ void main(int argc, char* argv[])
   ( after 30s or more you will get a full description of your network 
   devices and open ports for every one of them ).
   
-  * For closing port the easiest way is to use a fire wall program
-    and masking open port from the external world. 
-    ufw is what it's name stand for:
-    "uncomplicate fire wall" so install it:
+  localy on the targeted machine you can also type:
+  ```
+  $ ss -tuln
+  ```
+  ( but it's local better to grab the network from an outside view in one shoot ...)
+  
+  * So now for closing open port, the easiest way is to use a fire wall program
+    and masking the non usefull open port from the external world.
+  * Else what you have to uninstall each modules providing an internet outside conection one by one
+  * for getting the list of them:
+    ```
+    $ sudo apt install lsof
+    ```
+    ( install lsof 'listof?' )
+  * for getting the process id (pid) of application opening a port connection: 
+    ```
+    $ sudo sudo lsof -i
+    ```
+  * then from pid find the path:
+  ```
+  sudo lsof -p PIDNUMBER
+  ```
+  -> you get the path file of all the dependency for further internet investigation:
+       * on how it get intalled for eventually be uninstalled in a automated way with an unistall binary ect... 
+       * removing every dependency is often not a pratical way, 
+         ( if it's a malware better to reinstall linux )
+         but that a neat way to recover the origin of the mysterious pid !
+  
+  * Else what ufw is what it's name stand for:
+       "uncomplicate fire wall !" 
+  
+  * So install it:
    ```
    sudo apt install ufw
    ```
@@ -293,7 +321,7 @@ void main(int argc, char* argv[])
    sudo ufw enable 
    ```
    ( enable firewall now and at each start up )
-   ( now everything is lockdown by default )
+   ( now everything incoming connection are lockdown by default )
    ```
    sudo ufw allow ssh
    ```
