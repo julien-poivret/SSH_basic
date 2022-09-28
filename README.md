@@ -296,9 +296,9 @@ void main(int argc, char* argv[])
     ```
     ( install lsof 'listof?' )
   * for getting the process id (pid) of application opening a port connection: 
-    ```
-    $ sudo sudo lsof -i
-    ```
+  ```
+  $ sudo lsof -i
+  ```
   * then from pid find the path:
   ```
   $ sudo lsof -p PIDNUMBER
