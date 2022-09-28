@@ -190,7 +190,7 @@ read well the escape key for qiting without saving the instructions !
 
 * Then loggout & login your session for update the server status.
 
-* Now you have type your password only one time by session !!!
+* Now you have to type your password only one time by session !!!
 
 * Now for security purpose you have to log on server via $ ssh username@serverip 
 once then type sudo apt update (or anything else in sudo only one time !) 
