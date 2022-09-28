@@ -144,7 +144,7 @@ Now you can code a simple program on the client side for controling GPIO or anyt
 ```
 $ sudo systemctl disable ssh
 ```
-( stop and will not start up the ssh server anymore after reboot )
+( linux stop the ssh server and will not start up it anymore after reboot )
 ```
 $ sudo systemctl stop ssh
 ```
