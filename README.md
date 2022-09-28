@@ -354,5 +354,5 @@ void main(int argc, char* argv[])
    
    * For downloading the file from the ssh server to the current local folder:
    ```
-   $ scp username@sshserverip:~/path/of/the/file ./
+   $ scp -r username@sshserverip:~/path/of/the/directory ./
    ```
