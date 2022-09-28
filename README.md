@@ -94,18 +94,19 @@ $ sudo ssh-copy-id -i ~/.ssh/id_rsa username@ipserver
 ```
 of couse replace your username and ipserver with your local server session characteristic...
 
-* Then now you can simply login remotely on server with:
+* Then now you can simply login remotely on server from client with:
 ```
 $ ssh username@ipserver 
 ```
-no password are needed anymore for login via ssh from client
+no password are needed anymore for login via ssh to the server.
 
 * If everything work well 
-on **(server side !) you can now go in:
+on the server side ( with a physical call access or via the ssh login ) ! 
+you can now go in:
 ```
 $ sudo vim /etc/ssh/sshd_config 
 ```
-and add the two following text lines instructions:
+and add the two following text lines instructions inside that file:
 
 ```
 PubkeyAuthentication yes
@@ -128,15 +129,17 @@ PasswordAuthentication to "no" in ```/etc/ssh/sshd_config```
 by the way the list of allowed keys by the server are stored in plane text 
 at ~/.ssh (on server side).
 
-* Next type on terminal (always on server side):
+* Next type on terminal, always on server side with physicall access (if you have locked out yourself)
+or via an ssh login (ssh username@sshserverip) type:
 ```
 $ sudo systemctl restart ssh
 ```
-( for refreshing the new list of hosts allowed on the server ).
+this will refresh the new list of hosts allowed on the server or simply reboot the physical linux server.
 
-Now you can code a simple program on the client side for controling gpio or anything remotly !
-more on this in a moment... 
+Now you can code a simple program on the client side for controling GPIO or anything remotly via ssh connection !
+( more on this in a moment... ) 
 
+***************************************************************************
 * For controling the server (on server side):
 ```
 $ sudo systemctl disable ssh
@@ -158,7 +161,7 @@ $ sudo systemctl start ssh
 $ sudo systemctl status ssh    
 ```
 ( for cheking actual status )
-
+***********************************************************************
 * For additional security mesures:
 
    * use a compiled and minimalist linux kernel.
@@ -179,7 +182,7 @@ $ sudo visudo
 * Under the line starting by %root or %admin type
 your_user_name_session ALL=NOPASSWD: ALL
 
-like this: (julien is my username)
+like this: (julien is my username replace with yours settings)
 ```
 %sudo   ALL=(ALL:ALL) ALL
 julien ALL=NOPASSWD: ALL
@@ -188,7 +191,8 @@ F2 key for saving with nano ( be care full to don't make error before saving you
 your login file, futher more a warning is triggered in case of error before save as protection ! 
 read well the escape key for qiting without saving the instructions !
 
-* Then loggout & login your session for update the server status.
+* Then loggout & login your session for update the server status 
+( you need a physical access on the server for configuring it via termina console ).
 
 * Now you have to type your password only one time by session !!!
 
