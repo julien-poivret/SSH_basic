@@ -272,9 +272,8 @@ void main(int argc, char* argv[])
   ```
   $ sudo apt install nmap
   ```
-* check your Ipv4 network source adress like something in wlan0:
-  look at someting like this inet 192.168.1.3\24
-  in wlan0 or eth0 with:
+* check your Ipv4 inet adress of your network in wlan0 or eth0 (for RJ45 wire connection):
+  look at someting like this inet 192.168.1.3\24 with:
   ```
   $ ip addr
   ```
