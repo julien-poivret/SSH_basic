@@ -328,7 +328,7 @@ void main(int argc, char* argv[])
    ( allow only port 22 ) 
    * Next the server must be reloaded with: 
    ```
-   sudo apt ufw reload
+   $ sudo apt ufw reload
    ```
    ( reload the firewall )
    ```
