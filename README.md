@@ -272,11 +272,11 @@ void main(int argc, char* argv[])
   look at someting like this inet 192.168.1.3\24
   in wlan0 or eth0 with:
   ```
-  ip addr
+  $ ip addr
   ```
  * Then scan your network for all devices and open ports:
   ```
-  nmap 192.168.1.14\24 
+  $ nmap 192.168.1.14\24 
   ```
   ( after 30s or more you will get a full description of your network 
   devices and open ports for every one of them ).
@@ -301,7 +301,7 @@ void main(int argc, char* argv[])
     ```
   * then from pid find the path:
   ```
-  sudo lsof -p PIDNUMBER
+  $ sudo lsof -p PIDNUMBER
   ```
   -> you get the path file of all the dependency for further internet investigation:
        * on how it get intalled for eventually be uninstalled in a automated way with an unistall binary ect... 
@@ -314,16 +314,16 @@ void main(int argc, char* argv[])
   
   * So install it:
    ```
-   sudo apt install ufw
+   $ sudo apt install ufw
    ```
    * Then start it: 
    ```
-   sudo ufw enable 
+   $ sudo ufw enable 
    ```
    ( enable firewall now and at each start up )
    ( now everything incoming connection are lockdown by default )
    ```
-   sudo ufw allow ssh
+   $ sudo ufw allow ssh
    ```
    ( allow only port 22 ) 
    * Next the server must be reloaded with: 
@@ -332,18 +332,18 @@ void main(int argc, char* argv[])
    ```
    ( reload the firewall )
    ```
-   sudo ufw staus verbose
+   $ sudo ufw staus verbose
    ```
    ( for checking the config )
    ```
-   sudo ufw disable
+   $ sudo ufw disable
    ```
    ( disable the firewall at startup )
    ```
-   sudo ufw stop
+   $ sudo ufw stop
    ```
    ( stop the firewall )
    ```
-   sudo apt ufw help
+   $ sudo apt ufw help
    ```
    ( all option are explained )
