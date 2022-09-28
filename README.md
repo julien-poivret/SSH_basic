@@ -332,7 +332,7 @@ void main(int argc, char* argv[])
    ```
    ( reload the firewall )
    ```
-   $ sudo ufw staus verbose
+   $ sudo ufw status verbose
    ```
    ( for checking the config )
    ```
