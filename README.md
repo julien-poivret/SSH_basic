@@ -1,4 +1,4 @@
-# SSH_basic
+# SSH_basic (Secure Shell Protocol)
 ```
 SSH server basic setup, for "password less" login (with security) and strategic domotic control.
                            
