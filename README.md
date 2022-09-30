@@ -132,9 +132,9 @@ at ~/.ssh (on server side).
 * Next type on terminal, always on server side with physicall access (if you have locked out yourself)
 or via an ssh login (ssh username@sshserverip) type:
 ```
-$ sudo systemctl restart ssh
+$ sudo reboot
 ```
-this will refresh the new list of hosts allowed on the server or simply reboot the physical linux server.
+Simply reboot the physical linux server to refresh the list of allowed hoats on the server.
 
 Now you can code a simple program on the client side for controling GPIO or anything remotly via ssh connection !
 ( more on this in a moment... ) 
