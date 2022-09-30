@@ -279,7 +279,7 @@ void main(int argc, char* argv[])
   ```
  * Then scan your network for all devices and open ports:
   ```
-  $ nmap 192.168.1.14\24 
+  $ nmap -sL 192.168.1.14/24 
   ```
   ( after 30s or a bit more you will get a full description of your network 
   devices and open ports for every one of them ).
