@@ -348,6 +348,10 @@ void main(int argc, char* argv[])
    ```
    ( stop the firewall )
    ```
+   $ ufw logging off
+   ```
+   ( to disable log file )
+   ```
    $ sudo apt ufw help
    ```
    ( all options are explained )
